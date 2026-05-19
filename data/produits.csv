@@ -1,0 +1,11 @@
+id_produit,nom_produit,categorie,prix_base,fournisseur,stock_disponible
+P001,Laptop Pro,Electronique,950000,TechAfrique,45
+P002,Smartphone X,Electronique,420000,TechAfrique,120
+P003,Chaise Ergonomique,Mobilier,185000,MeublesDakar,30
+P004,Disque SSD 1TB,Electronique,85000,TechAfrique,200
+P005,Bureau Standing,Mobilier,320000,MeublesDakar,15
+P006,Casque Audio,Electronique,75000,SoundWave,80
+P007,Tablette 10",Electronique,310000,TechAfrique,60
+P008,Lampe LED Smart,Maison,45000,LumièreSN,150
+P009,Cafetière Pro,Maison,95000,KitchenPlus,40
+P010,Webcam HD,Electronique,62000,TechAfrique,90

@@ -1,0 +1,13 @@
+id_employe,nom,prenom,id_departement,salaire,anciennete_annees,genre,date_embauche
+E001,Diallo,Mamadou,D01,650000,8,M,2015-03-10
+E002,Sow,Fatou,D02,820000,12,F,2011-07-22
+E003,Fall,Ibrahima,D01,540000,3,M,2020-01-15
+E004,Ndiaye,Aminata,D03,910000,15,F,2008-06-01
+E005,Ba,Ousmane,D02,730000,9,M,2014-11-30
+E006,Sarr,Rokhaya,D01,610000,6,F,2017-09-14
+E007,Diop,Cheikh,D03,1050000,18,M,2005-04-20
+E008,Mbaye,Ndèye,D04,480000,2,F,2021-08-05
+E009,Thiam,Lamine,D02,870000,11,M,2012-02-28
+E010,Cissé,Marème,D04,520000,4,F,2019-05-17
+E011,Gueye,Pape,D03,980000,14,M,2009-10-03
+E012,Koné,Awa,D01,590000,5,F,2018-12-01

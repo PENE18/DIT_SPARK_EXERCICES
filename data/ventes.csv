@@ -1,0 +1,13 @@
+id_vente,produit,categorie,quantite,prix_unitaire,ville,date_vente
+1,Laptop,Electronique,2,850.00,Dakar,2023-01-15
+2,Chaise,Mobilier,5,120.00,Thiès,2023-01-16
+3,Téléphone,Electronique,3,450.00,Dakar,2023-02-10
+4,Bureau,Mobilier,1,300.00,Saint-Louis,2023-02-14
+5,Casque,Electronique,10,75.00,Dakar,2023-03-05
+6,Lampe,Mobilier,4,40.00,Thiès,2023-03-18
+7,Tablette,Electronique,6,320.00,Ziguinchor,2023-04-01
+8,Canapé,Mobilier,2,600.00,Dakar,2023-04-22
+9,Souris,Electronique,15,25.00,Saint-Louis,2023-05-07
+10,Étagère,Mobilier,3,90.00,Thiès,2023-05-19
+11,Clavier,Electronique,8,60.00,Dakar,2023-06-03
+12,Armoire,Mobilier,1,750.00,Ziguinchor,2023-06-25
