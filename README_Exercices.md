@@ -1,11 +1,11 @@
-# 🚀 Spark Scala — Exercices Pratiques (RDD & DataFrame)
+#  Spark Scala — Exercices Pratiques (RDD & DataFrame)
 ### Niveau : Master 2 Data Engineering / Big Data
 > **Pas de Streaming** — Uniquement **RDD** et **DataFrame**
 > Données au format **CSV** — Du débutant à l'expert
 
 ---
 
-## 📋 Table des Matières
+##  Table des Matières
 
 1. [Exercice 1 — Analyse des Ventes (Niveau Débutant)](#exercice-1--analyse-des-ventes-niveau-débutant)
 2. [Exercice 2 — Analyse RH & Salaires (Niveau Intermédiaire)](#exercice-2--analyse-rh--salaires-niveau-intermédiaire)
@@ -13,7 +13,7 @@
 
 ---
 
-## ⚙️ Prérequis & Configuration
+##  Prérequis & Configuration
 
 ```scala
 // build.sbt
@@ -44,12 +44,12 @@ sc.setLogLevel("WARN")
 
 ## Exercice 1 — Analyse des Ventes (Niveau Débutant)
 
-### 🎯 Objectif
+###  Objectif
 Manipuler les **RDD** et les **DataFrames** de base pour explorer un jeu de données de ventes commerciales.
 
 ---
 
-### 📄 Données : `ventes.csv`
+###  Données : `ventes.csv`
 
 ```csv
 id_vente,produit,categorie,quantite,prix_unitaire,ville,date_vente
@@ -69,7 +69,7 @@ id_vente,produit,categorie,quantite,prix_unitaire,ville,date_vente
 
 ---
 
-### 📝 Questions — Partie A : Avec les RDD
+###  Questions — Partie A : Avec les RDD
 
 **Q1.1 — Chargement & comptage**
 Chargez le fichier `ventes.csv` avec `sc.textFile()`. Supprimez l'en-tête, puis affichez le nombre total de ventes.
@@ -89,7 +89,7 @@ Trouvez le produit dont la quantité totale vendue est la plus élevée.
 
 ---
 
-### 📝 Questions — Partie B : Avec les DataFrames
+###  Questions — Partie B : Avec les DataFrames
 
 **Q1.6 — Chargement avec schéma automatique**
 Chargez `ventes.csv` avec `spark.read.csv()`, option `header = true` et `inferSchema = true`. Affichez le schéma et les 5 premières lignes.
@@ -113,12 +113,12 @@ Sélectionnez les ventes où `prix_unitaire > 100` ET `ville = "Dakar"`, triées
 
 ## Exercice 2 — Analyse RH & Salaires (Niveau Intermédiaire)
 
-### 🎯 Objectif
+###  Objectif
 Maîtriser les **jointures**, les **agrégations avancées**, les **fonctions de fenêtrage (Window Functions)** et la conversion RDD ↔ DataFrame.
 
 ---
 
-### 📄 Données : `employes.csv` & `departements.csv`
+###  Données : `employes.csv` & `departements.csv`
 
 **`employes.csv`**
 ```csv
@@ -148,7 +148,7 @@ D04,Marketing,Thiès,30000000
 
 ---
 
-### 📝 Questions — Partie A : Jointures & Agrégations
+###  Questions — Partie A : Jointures & Agrégations
 
 **Q2.1 — Jointure RDD manuelle**
 En utilisant uniquement l'API RDD, réalisez une jointure entre `employes.csv` et `departements.csv` sur `id_departement`. Affichez : `nom`, `prenom`, `nom_departement`, `salaire`.
@@ -164,7 +164,7 @@ Pour chaque département, identifiez les 3 employés les mieux payés. Utilisez 
 
 ---
 
-### 📝 Questions — Partie B : Window Functions & Analyses Avancées
+###  Questions — Partie B : Window Functions & Analyses Avancées
 
 **Q2.5 — Rang et percentile salarial**
 Ajoutez au DataFrame les colonnes suivantes :
@@ -188,12 +188,12 @@ Transformez le DataFrame résultant de Q2.2 en RDD, doublez le salaire moyen de 
 
 ## Exercice 3 — Analyse E-Commerce Multi-Sources (Niveau Expert)
 
-### 🎯 Objectif
+###  Objectif
 Résoudre des problèmes complexes : **jointures multiples**, **optimisation Spark** (partitionnement, cache, broadcast), **Spark SQL**, schémas explicites (`StructType`), et traitement de données imparfaites.
 
 ---
 
-### 📄 Données : `commandes.csv`, `clients.csv`, `produits.csv`
+###  Données : `commandes.csv`, `clients.csv`, `produits.csv`
 
 **`commandes.csv`**
 ```csv
@@ -243,7 +243,7 @@ P010,Webcam HD,Electronique,62000,TechAfrique,90
 
 ---
 
-### 📝 Questions — Partie A : Schémas Explicites & Qualité des Données
+###  Questions — Partie A : Schémas Explicites & Qualité des Données
 
 **Q3.1 — Définir les schémas manuellement**
 Définissez un `StructType` explicite pour chacun des 3 fichiers CSV et chargez-les **sans** `inferSchema`. Gérez les types correctement (`IntegerType`, `DoubleType`, `DateType`).
@@ -261,7 +261,7 @@ Calculez pour chaque DataFrame :
 
 ---
 
-### 📝 Questions — Partie B : Analyses Métier Complexes
+###  Questions — Partie B : Analyses Métier Complexes
 
 **Q3.4 — Chiffre d'affaires net par commande**
 Réalisez la jointure entre `commandes`, `produits` et `clients`. Calculez le CA net uniquement pour les commandes `livré` :
@@ -283,7 +283,7 @@ Calculez le CA net mensuel et le **taux de croissance mois sur mois** (MoM %) po
 
 ---
 
-### 📝 Questions — Partie C : Optimisation & Spark SQL
+###  Questions — Partie C : Optimisation & Spark SQL
 
 **Q3.8 — Broadcast Join**
 Réécrivez la jointure de Q3.4 en forçant un **broadcast join** sur les DataFrames `produits` et `clients`. Comparez les plans d'exécution avant/après avec `.explain(true)`.
@@ -308,7 +308,7 @@ Sauvegardez le rapport final en :
 
 ---
 
-## 📊 Tableau Récapitulatif des Compétences
+##  Tableau Récapitulatif des Compétences
 
 | Exercice | Niveau | Concepts Clés |
 |----------|--------|---------------|
